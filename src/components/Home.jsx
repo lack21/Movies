@@ -70,7 +70,7 @@ function Home() {
         Found {notTrendingData.length} results for '{searchName}'
       </h2>
 
-      <h2 className="heading">Trending Changed Second Third</h2>
+      <h2 className="heading">Trending Changed Fourth</h2>
       <section className="trending" onClick={MoveTrending}>
         {trendingData.map((item, index) => (
           <div key={index} className="item">
