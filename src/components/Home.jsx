@@ -1,8 +1,9 @@
-import data from "../../data.json";
+import data from "../data.json";
 import searchIcon from "../assets/icon-search.svg";
 import categoryMovieIcon from "../assets/icon-category-movie.svg";
 import categoryTvIcon from "../assets/icon-category-tv.svg";
 import { useState } from "react";
+import "../assets/thumbnails/moon.jpg";
 
 function Home() {
   const [trendingData, setTrendingData] = useState(
@@ -69,7 +70,7 @@ function Home() {
         Found {notTrendingData.length} results for '{searchName}'
       </h2>
 
-      <h2 className="heading">Trending</h2>
+      <h2 className="heading">Trending Changed</h2>
       <section className="trending" onClick={MoveTrending}>
         {trendingData.map((item, index) => (
           <div key={index} className="item">

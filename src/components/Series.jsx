@@ -1,4 +1,4 @@
-import data from "../../data.json";
+import data from "../data.json";
 import searchIcon from "../assets/icon-search.svg";
 import categoryTvIcon from "../assets/icon-category-tv.svg";
 import { useState } from "react";

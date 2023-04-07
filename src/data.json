@@ -28,7 +28,7 @@
   },
   {
     "title": "1998",
-    "image": "src/assets/thumbnails/1998.jpg",
+    "image": "../assets/thumbnails/1998.jpg",
     "year": 2021,
     "category": "Movie",
     "rating": "18+",
@@ -37,11 +37,10 @@
   },
   {
     "title": "Dark Side of the Moon",
-    "image": "src/assets/thumbnails/moon.jpg",
+    "image": "../assets/thumbnails/moon.jpg",
     "year": 2018,
     "category": "TV Series",
     "rating": "PG",
-
     "isTrending": true,
     "isBookmarked": false
   },
