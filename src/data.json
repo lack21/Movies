@@ -46,7 +46,7 @@
   },
   {
     "title": "The Great Lands",
-    "image": "../assets/thumbnails/the-great-lands.jpg",
+    "image": "./assets/thumbnails/the-great-lands.jpg",
     "year": 2019,
     "category": "Movie",
     "rating": "E",
@@ -55,7 +55,7 @@
   },
   {
     "title": "The Diary",
-    "image": "../assets/thumbnails/the-diary.jpg",
+    "image": "./assets/thumbnails/the-diary.jpg",
     "year": 2019,
     "category": "TV Series",
     "rating": "PG",
