@@ -28,7 +28,7 @@
   },
   {
     "title": "1998",
-    "image": "../assets/thumbnails/1998.jpg",
+    "image": "src/assets/thumbnails/1998.jpg",
     "year": 2021,
     "category": "Movie",
     "rating": "18+",
@@ -37,7 +37,7 @@
   },
   {
     "title": "Dark Side of the Moon",
-    "image": "../assets/thumbnails/moon.jpg",
+    "image": "src/assets/thumbnails/moon.jpg",
     "year": 2018,
     "category": "TV Series",
     "rating": "PG",
@@ -46,7 +46,7 @@
   },
   {
     "title": "The Great Lands",
-    "image": "src/assets/thumbnails/the-great-lands.jpg",
+    "image": "../assets/thumbnails/the-great-lands.jpg",
     "year": 2019,
     "category": "Movie",
     "rating": "E",
@@ -55,7 +55,7 @@
   },
   {
     "title": "The Diary",
-    "image": "src/assets/thumbnails/the-diary.jpg",
+    "image": "../assets/thumbnails/the-diary.jpg",
     "year": 2019,
     "category": "TV Series",
     "rating": "PG",
