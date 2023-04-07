@@ -1,0 +1,88 @@
+import data from "../../data.json";
+import searchIcon from "../assets/icon-search.svg";
+import categoryMovieIcon from "../assets/icon-category-movie.svg";
+import categoryTvIcon from "../assets/icon-category-tv.svg";
+import { useState } from "react";
+
+function Bookmarks() {
+  const [bookmarkedData, setBookmarkedData] = useState(
+    data.filter((item) => item.isBookmarked === true)
+  );
+  const [inputValue, setInputValue] = useState("");
+  const [searchName, setSearchName] = useState("");
+
+  function ToggleCheckmark(e) {
+    e.target.classList.toggle("active");
+    data.forEach((item) => {
+      if (item.title === e.target.name) {
+        item.isBookmarked = false;
+      }
+    });
+  }
+
+  function SearchMovie() {
+    document
+      .querySelectorAll(".heading")
+      .forEach((item) => (item.style.display = "none"));
+    document.querySelector(".heading.second").style.display = "block";
+    setBookmarkedData(
+      data.filter(
+        (item) =>
+          item.title
+            .toLocaleLowerCase()
+            .includes(inputValue.toLocaleLowerCase()) && item.isBookmarked
+      )
+    );
+    setSearchName(inputValue);
+  }
+
+  return (
+    <div>
+      <section className="search-section">
+        <img src={searchIcon} alt="search-icon" onClick={SearchMovie} />
+        <input
+          type="text"
+          name="text"
+          placeholder="Search for bookmarked shows"
+          onChange={(e) => setInputValue(e.target.value)}
+        />
+      </section>
+
+      <h2 className="heading second">
+        Found {bookmarkedData.length} results for '{searchName}'
+      </h2>
+
+      <h2 className="heading">Bookmarked Movies</h2>
+      <section className="container">
+        {bookmarkedData.map((item, index) => (
+          <div key={index} className="item">
+            <button
+              className="check-btn marked"
+              onClick={ToggleCheckmark}
+              name={item.title}
+            ></button>
+            <img src={item.image} alt={item.title} className="image" />
+
+            <div className="details">
+              <h4 className="detail">{item.year}</h4>
+              <h4 className="detail">•</h4>
+              <img
+                src={
+                  item.category === "Movie" ? categoryMovieIcon : categoryTvIcon
+                }
+                className="detail"
+                alt="category"
+              />
+              <h4 className="detail">{item.category}</h4>
+              <h4 className="detail">•</h4>
+              <h4 className="detail">{item.rating}</h4>
+            </div>
+            <h3 className="name">{item.title}</h3>
+          </div>
+        ))}
+      </section>
+    </div>
+  );
+}
+
+export default Bookmarks;

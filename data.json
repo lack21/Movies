@@ -1,0 +1,271 @@
+[
+  {
+    "title": "Beyond Earth",
+    "image": "src/assets/thumbnails/beyond-earth.jpg",
+    "year": 2019,
+    "category": "Movie",
+    "rating": "PG",
+    "isTrending": true,
+    "isBookmarked": false
+  },
+  {
+    "title": "Bottom Gear",
+    "image": "src/assets/thumbnails/bottom-gear.jpg",
+    "year": 2021,
+    "category": "Movie",
+    "rating": "PG",
+    "isTrending": true,
+    "isBookmarked": false
+  },
+  {
+    "title": "Undiscovered Cities",
+    "image": "src/assets/thumbnails/undiscovered-cities.jpg",
+    "year": 2019,
+    "category": "TV Series",
+    "rating": "E",
+    "isTrending": true,
+    "isBookmarked": false
+  },
+  {
+    "title": "1998",
+    "image": "src/assets/thumbnails/1998.jpg",
+    "year": 2021,
+    "category": "Movie",
+    "rating": "18+",
+    "isTrending": true,
+    "isBookmarked": false
+  },
+  {
+    "title": "Dark Side of the Moon",
+    "image": "src/assets/thumbnails/moon.jpg",
+    "year": 2018,
+    "category": "TV Series",
+    "rating": "PG",
+
+    "isTrending": true,
+    "isBookmarked": false
+  },
+  {
+    "title": "The Great Lands",
+    "image": "src/assets/thumbnails/the-great-lands.jpg",
+    "year": 2019,
+    "category": "Movie",
+    "rating": "E",
+    "isTrending": false,
+    "isBookmarked": false
+  },
+  {
+    "title": "The Diary",
+    "image": "src/assets/thumbnails/the-diary.jpg",
+    "year": 2019,
+    "category": "TV Series",
+    "rating": "PG",
+    "isTrending": false,
+    "isBookmarked": false
+  },
+  {
+    "title": "Earth’s Untouched",
+    "image": "src/assets/thumbnails/earths-untouched.jpg",
+    "year": 2017,
+    "category": "Movie",
+    "rating": "18+",
+    "isTrending": false,
+    "isBookmarked": false
+  },
+  {
+    "title": "No Land Beyond",
+    "image": "src/assets/thumbnails/no-land-beyond.jpg",
+    "year": 2019,
+    "category": "Movie",
+    "rating": "E",
+    "isTrending": false,
+    "isBookmarked": false
+  },
+  {
+    "title": "During the Hunt",
+    "image": "src/assets/thumbnails/during-the-hunt.jpg",
+    "year": 2016,
+    "category": "TV Series",
+    "rating": "PG",
+    "isTrending": false,
+    "isBookmarked": false
+  },
+  {
+    "title": "Autosport the Series",
+    "image": "src/assets/thumbnails/autosport.jpg",
+    "year": 2016,
+    "category": "TV Series",
+    "rating": "18+",
+    "isTrending": false,
+    "isBookmarked": false
+  },
+  {
+    "title": "Same Answer II",
+    "image": "src/assets/thumbnails/same-answer-2.jpg",
+    "year": 2017,
+    "category": "Movie",
+    "rating": "E",
+    "isTrending": false,
+    "isBookmarked": false
+  },
+  {
+    "title": "Below Echo",
+    "image": "src/assets/thumbnails/below-echo.jpg",
+    "year": 2016,
+    "category": "TV Series",
+    "rating": "PG",
+    "isTrending": false,
+    "isBookmarked": false
+  },
+  {
+    "title": "The Rockies",
+    "image": "src/assets/thumbnails/the-rockies.jpg",
+    "year": 2015,
+    "category": "TV Series",
+    "rating": "E",
+
+    "isTrending": false,
+    "isBookmarked": false
+  },
+  {
+    "title": "Relentless",
+    "image": "src/assets/thumbnails/relentless.jpg",
+    "year": 2017,
+    "category": "Movie",
+    "rating": "PG",
+
+    "isTrending": false,
+    "isBookmarked": false
+  },
+  {
+    "title": "Community of Ours",
+    "image": "src/assets/thumbnails/community-of-ours.jpg",
+    "year": 2018,
+    "category": "TV Series",
+    "rating": "18+",
+    "isTrending": false,
+    "isBookmarked": false
+  },
+  {
+    "title": "Van Life",
+    "image": "src/assets/thumbnails/van-life.jpg",
+    "year": 2015,
+    "category": "Movie",
+    "rating": "PG",
+    "isTrending": false,
+    "isBookmarked": false
+  },
+  {
+    "title": "The Heiress",
+    "image": "src/assets/thumbnails/the-heiress.jpg",
+    "year": 2021,
+    "category": "Movie",
+    "rating": "PG",
+
+    "isTrending": false,
+    "isBookmarked": false
+  },
+  {
+    "title": "Off the Track",
+    "image": "src/assets/thumbnails/off-the-track.jpg",
+    "year": 2017,
+    "category": "Movie",
+    "rating": "18+",
+
+    "isTrending": false,
+    "isBookmarked": false
+  },
+  {
+    "title": "Whispering Hill",
+    "image": "src/assets/thumbnails/whispering-hill.jpg",
+    "year": 2017,
+    "category": "Movie",
+    "rating": "E",
+    "isTrending": false,
+    "isBookmarked": false
+  },
+  {
+    "title": "112",
+    "image": "src/assets/thumbnails/medic.jpg",
+    "year": 2013,
+    "category": "TV Series",
+    "rating": "PG",
+    "isTrending": false,
+    "isBookmarked": false
+  },
+  {
+    "title": "Lone Heart",
+    "image": "src/assets/thumbnails/lone-heart.jpg",
+    "year": 2017,
+    "category": "Movie",
+    "rating": "E",
+
+    "isTrending": false,
+    "isBookmarked": false
+  },
+  {
+    "title": "Production Line",
+    "image": "src/assets/thumbnails/production-line.jpg",
+    "year": 2018,
+    "category": "TV Series",
+    "rating": "PG",
+    "isTrending": false,
+    "isBookmarked": false
+  },
+  {
+    "title": "Dogs",
+    "image": "src/assets/thumbnails/dogs.jpg",
+    "year": 2016,
+    "category": "TV Series",
+    "rating": "E",
+    "isTrending": false,
+    "isBookmarked": false
+  },
+  {
+    "title": "Asia in 24 Days",
+    "image": "src/assets/thumbnails/asia.jpg",
+    "year": 2020,
+    "category": "TV Series",
+    "rating": "PG",
+    "isTrending": false,
+    "isBookmarked": false
+  },
+  {
+    "title": "The Tasty Tour",
+    "image": "src/assets/thumbnails/the-tasty-tour.jpg",
+    "year": 2016,
+    "category": "TV Series",
+    "rating": "PG",
+    "isTrending": false,
+    "isBookmarked": false
+  },
+  {
+    "title": "Darker",
+    "image": "src/assets/thumbnails/darker.jpg",
+    "year": 2017,
+    "category": "Movie",
+    "rating": "18+",
+
+    "isTrending": false,
+    "isBookmarked": false
+  },
+  {
+    "title": "Unresolved Cases",
+    "image": "src/assets/thumbnails/unresolved-cases.jpg",
+    "year": 2018,
+    "category": "TV Series",
+    "rating": "18+",
+    "isTrending": false,
+    "isBookmarked": false
+  },
+  {
+    "title": "Mission: Saturn",
+    "image": "src/assets/thumbnails/mission-saturn.jpg",
+    "year": 2017,
+    "category": "Movie",
+    "rating": "PG",
+
+    "isTrending": false,
+    "isBookmarked": false
+  }
+]
