@@ -3,19 +3,20 @@ import searchIcon from "../assets/icon-search.svg";
 import categoryMovieIcon from "../assets/icon-category-movie.svg";
 import categoryTvIcon from "../assets/icon-category-tv.svg";
 import { useState } from "react";
+import { newData } from "./Images";
 
 function Bookmarks() {
   const [bookmarkedData, setBookmarkedData] = useState(
-    data.filter((item) => item.isBookmarked === true)
+    newData.filter((item) => item[4] === true)
   );
   const [inputValue, setInputValue] = useState("");
   const [searchName, setSearchName] = useState("");
 
   function ToggleCheckmark(e) {
     e.target.classList.toggle("active");
-    data.forEach((item) => {
-      if (item.title === e.target.name) {
-        item.isBookmarked = false;
+    newData.forEach((item) => {
+      if (item[0] === e.target.name) {
+        item[4] = false;
       }
     });
   }
@@ -26,11 +27,11 @@ function Bookmarks() {
       .forEach((item) => (item.style.display = "none"));
     document.querySelector(".heading.second").style.display = "block";
     setBookmarkedData(
-      data.filter(
+      newData.filter(
         (item) =>
-          item.title
+          item[0]
             .toLocaleLowerCase()
-            .includes(inputValue.toLocaleLowerCase()) && item.isBookmarked
+            .includes(inputValue.toLocaleLowerCase()) && item[4]
       )
     );
     setSearchName(inputValue);
@@ -59,25 +60,23 @@ function Bookmarks() {
             <button
               className="check-btn marked"
               onClick={ToggleCheckmark}
-              name={item.title}
+              name={item[0]}
             ></button>
-            <img src={item.image} alt={item.title} className="image" />
+            <img src={item[1]} alt={item[0]} className="image" />
 
             <div className="details">
-              <h4 className="detail">{item.year}</h4>
+              <h4 className="detail">{item[2]}</h4>
               <h4 className="detail">•</h4>
               <img
-                src={
-                  item.category === "Movie" ? categoryMovieIcon : categoryTvIcon
-                }
+                src={item[3] === "Movie" ? categoryMovieIcon : categoryTvIcon}
                 className="detail"
                 alt="category"
               />
-              <h4 className="detail">{item.category}</h4>
+              <h4 className="detail">{item[3]}</h4>
               <h4 className="detail">•</h4>
-              <h4 className="detail">{item.rating}</h4>
+              <h4 className="detail">{item[6]}</h4>
             </div>
-            <h3 className="name">{item.title}</h3>
+            <h3 className="name">{item[0]}</h3>
           </div>
         ))}
       </section>

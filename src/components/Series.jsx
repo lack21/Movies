@@ -2,19 +2,20 @@ import data from "../data.json";
 import searchIcon from "../assets/icon-search.svg";
 import categoryTvIcon from "../assets/icon-category-tv.svg";
 import { useState } from "react";
+import { newData } from "./Images";
 
 function Series() {
   const [tvSeriesData, setTvSeriesData] = useState(
-    data.filter((item) => item.category === "TV Series")
+    newData.filter((item) => item[3] === "TV Series")
   );
   const [inputValue, setInputValue] = useState("");
   const [searchName, setSearchName] = useState("");
 
   function ToggleCheckmark(e) {
     e.target.classList.toggle("active");
-    data.forEach((item) => {
-      if (item.title === e.target.name) {
-        item.isBookmarked = true;
+    newData.forEach((item) => {
+      if (item[0] === e.target.name) {
+        item[4] = true;
       }
     });
   }
@@ -25,12 +26,11 @@ function Series() {
       .forEach((item) => (item.style.display = "none"));
     document.querySelector(".heading.second").style.display = "block";
     setTvSeriesData(
-      data.filter(
+      newData.filter(
         (item) =>
-          item.title
+          item[0]
             .toLocaleLowerCase()
-            .includes(inputValue.toLocaleLowerCase()) &&
-          item.category === "TV Series"
+            .includes(inputValue.toLocaleLowerCase()) && item[3] === "TV Series"
       )
     );
     setSearchName(inputValue);
@@ -59,19 +59,19 @@ function Series() {
             <button
               className="check-btn"
               onClick={ToggleCheckmark}
-              name={item.title}
+              name={item[0]}
             ></button>
-            <img src={item.image} alt={item.title} className="image" />
+            <img src={item[1]} alt={item[0]} className="image" />
 
             <div className="details">
-              <h4 className="detail">{item.year}</h4>
+              <h4 className="detail">{item[2]}</h4>
               <h4 className="detail">•</h4>
               <img src={categoryTvIcon} className="detail" alt="category" />
-              <h4 className="detail">{item.category}</h4>
+              <h4 className="detail">{item[3]}</h4>
               <h4 className="detail">•</h4>
-              <h4 className="detail">{item.rating}</h4>
+              <h4 className="detail">{item[6]}</h4>
             </div>
-            <h3 className="name">{item.title}</h3>
+            <h3 className="name">{item[0]}</h3>
           </div>
         ))}
       </section>
