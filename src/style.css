@@ -7,18 +7,18 @@
 
 body {
   background-color: #10141e;
+  overflow-x: hidden;
 }
 
 #root {
   display: flex;
   align-items: flex-start;
   margin: 2rem;
-  overflow-x: hidden;
 }
 
 .nav-bar {
   position: sticky;
-  top: 0;
+  top: 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -99,29 +99,23 @@ body {
   display: none;
 }
 
-.ran {
-  display: block;
-  width: 1200px;
-  height: 0;
-}
-
 .trending {
   display: flex;
   gap: 2rem;
-  overflow: hidden;
+  overflow-x: scroll;
+  scrollbar-width: none;
   z-index: 2;
-  scroll-behavior: smooth;
   transition: 1s;
   -webkit-transition: 1s;
   -moz-transition: 1s;
   -ms-transition: 1s;
   -o-transition: 1s;
-  width: 2400px;
+  width: calc(100vw - 13rem);
 }
 .trending .item {
   position: relative;
-  flex-basis: 100%;
-  height: 250px;
+  min-width: 480px;
+  height: 240px;
   border-radius: 0.5rem;
   -webkit-border-radius: 0.5rem;
   -moz-border-radius: 0.5rem;
@@ -194,7 +188,7 @@ body {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 3rem;
-  width: calc(100vw - 16rem);
+  width: calc(100vw - 13rem);
 }
 .container .item {
   width: 100%;
@@ -269,14 +263,6 @@ body {
   .container {
     grid-template-columns: repeat(3, 1fr);
   }
-  .ran {
-    width: 1400px;
-  }
-}
-@media screen and (max-width: 1210px) {
-  .ran {
-    width: 1650px;
-  }
 }
 @media screen and (max-width: 978px) {
   .container {
@@ -287,6 +273,7 @@ body {
     flex-direction: column;
   }
   .nav-bar {
+    top: 0 !important;
     width: 100%;
     height: 5rem;
     flex-direction: row;
@@ -305,18 +292,12 @@ body {
     margin-top: 0;
     margin-left: auto;
   }
-  .ran {
-    width: 1600px;
+  .trending {
+    width: calc(100vw - 4rem);
   }
-}
-@media screen and (max-width: 868px) {
-  .ran {
-    width: 1700px;
-  }
-}
-@media screen and (max-width: 778px) {
-  .ran {
-    width: 1800px;
+  .trending .item {
+    min-width: 440px;
+    height: 220px;
   }
 }
 @media screen and (max-width: 668px) {
@@ -339,30 +320,17 @@ body {
     -ms-border-radius: 0;
     -o-border-radius: 0;
   }
-  .ran {
-    width: 1900px;
-  }
-}
-@media screen and (max-width: 568px) {
-  .trending {
-    width: 2200px;
-  }
-  .trending .item {
-    height: 220px;
-  }
-  .ran {
-    width: 1800px;
-  }
 }
 @media screen and (max-width: 478px) {
-  .ran {
-    width: 1850px;
-  }
   .heading {
     font-size: 1.8rem;
   }
+  .search-section {
+    width: auto;
+  }
   .search-section input {
-    font-size: 1.4rem;
+    font-size: 1.275rem;
+    padding: 0;
   }
   .nav-bar {
     padding: 2rem 1rem;
@@ -384,5 +352,12 @@ body {
   }
   .container {
     width: calc(100vw - 2rem);
+  }
+  .trending {
+    width: calc(100vw - 2rem);
+  }
+  .trending .item {
+    height: 200px;
+    min-width: 400px;
   }
 }/*# sourceMappingURL=style.css.map */

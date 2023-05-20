@@ -6,7 +6,6 @@ import { useState } from "react";
 import { newData } from "./Images";
 
 function Home() {
-  console.log(newData);
   const [trendingData, setTrendingData] = useState(
     newData.filter((item) => item[5] === true)
   );
@@ -15,7 +14,6 @@ function Home() {
   );
   const [inputValue, setInputValue] = useState("");
   const [searchName, setSearchName] = useState("");
-  let movement = 0;
 
   function ToggleCheckmark(e) {
     e.target.classList.toggle("active");
@@ -40,20 +38,6 @@ function Home() {
     setSearchName(inputValue);
   }
 
-  function MoveTrending(e) {
-    const trendingElement = document.querySelector(".trending");
-    const width = document.querySelector(".ran").offsetWidth;
-
-    if (e.clientX < window.innerWidth / 2) {
-      movement += movement == 0 ? 0 : width / 2;
-    } else {
-      movement -= movement <= -width ? 0 : width / 2;
-    }
-
-    trendingElement.style.transform = `translateX(${movement}px)`;
-    console.log(width);
-  }
-
   return (
     <div>
       <div className="ran"></div>
@@ -72,7 +56,7 @@ function Home() {
       </h2>
 
       <h2 className="heading">Trending</h2>
-      <section className="trending" onClick={MoveTrending}>
+      <section className="trending">
         {trendingData.map((item, index) => (
           <div key={index} className="item">
             <button
