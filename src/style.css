@@ -273,8 +273,8 @@ body {
     flex-direction: column;
   }
   .nav-bar {
-    top: 0 !important;
-    width: 100%;
+    top: 1rem;
+    width: calc(100vw - 4rem);
     height: 5rem;
     flex-direction: row;
     margin-right: 0;
@@ -299,6 +299,9 @@ body {
     min-width: 440px;
     height: 220px;
   }
+  .search-section {
+    width: auto;
+  }
 }
 @media screen and (max-width: 668px) {
   .container {
@@ -314,6 +317,8 @@ body {
     margin: 0;
   }
   .nav-bar {
+    width: 100%;
+    top: 0;
     border-radius: 0;
     -webkit-border-radius: 0;
     -moz-border-radius: 0;
@@ -325,10 +330,7 @@ body {
   .heading {
     font-size: 1.8rem;
   }
-  .search-section {
-    width: auto;
-  }
-  .search-section input {
+  .search-sectioninput {
     font-size: 1.275rem;
     padding: 0;
   }
